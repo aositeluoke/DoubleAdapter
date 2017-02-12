@@ -60,7 +60,7 @@ dependencies {
     };
 ```
 ###4、初始化适配器
-
+```
         adapter = new DoubleAdapter<GroupDto, String>(this, groupUI, childUI, expandableListView) {
             @Override
             protected void convertG(BaseAdapterHelper helper, GroupDto item) {
@@ -85,3 +85,8 @@ dependencies {
             }
         };
         expandableListView.setAdapter(adapter);
+```
+###5、实现效果
+ https://github.com/aositeluoke/DoubleAdapter/raw/master/git/multi_group_and_child.gif
+ https://github.com/aositeluoke/DoubleAdapter/raw/master/git/single_group_and_child.gif
+###实现效果
