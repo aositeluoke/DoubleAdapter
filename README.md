@@ -87,5 +87,5 @@ dependencies {
         expandableListView.setAdapter(adapter);
 ```
 ###5、实现效果
- ![](https://github.com/aositeluoke/DoubleAdapter/raw/master/gif/multi_group_and_child.gif)
+ ![](https://github.com/aositeluoke/DoubleAdapter/raw/master/gif/multi_group_and_child.gif)<br>
  ![](https://github.com/aositeluoke/DoubleAdapter/raw/master/gif/single_group_and_child.gif)
