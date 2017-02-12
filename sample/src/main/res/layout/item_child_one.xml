@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px28dp"
+        android:paddingTop="@dimen/px28dp">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="@dimen/px52dp"
+            android:layout_height="@dimen/px52dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px36dp"
+            android:layout_marginRight="@dimen/px36dp"
+            android:src="@drawable/ic_uncheck" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px230dp"
+
+            android:layout_height="@dimen/px230dp"
+            android:background="@drawable/shape_stroke_d7d7d7_radiu_10">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px4dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/px6dp"
+                android:maxLines="2"
+                android:text="李宁篮球鞋男鞋超轻10代高帮耐磨专业篮球鞋战靴运动透气休闲鞋ABPL069 -5白/红 41.5"
+                android:textColor="#000000"
+                android:textSize="@dimen/px30dp" />
+
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="@dimen/px6dp"
+                android:text="颜色：白/红色 尺码：41.5"
+                android:textColor="#8a8c8b"
+                android:textSize="@dimen/px28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥320.00"
+                android:textColor="#7c7e7d"
+                android:textSize="@dimen/px30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2dp"
+        android:background="#e0dedf" />
+</LinearLayout>

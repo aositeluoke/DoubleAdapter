@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="storehouse">
+        <item>0,35,12,42,</item>
+        <item>12,42,24,35,</item>
+        <item>24,35,12,28,</item>
+        <item>0,35,12,28,</item>
+        <item>0,21,12,28,</item>
+        <item>12,28,24,21,</item>
+        <item>24,35,24,21,</item>
+        <item>24,21,12,14,</item>
+        <item>0,21,12,14,</item>
+        <item>0,21,0,7,</item>
+        <item>12,14,0,7,</item>
+        <item>12,14,24,7,</item>
+        <item>24,7,12,0,</item>
+        <item>0,7,12,0,</item>
+    </string-array>
+    <string-array name="images">
+        <item>https://img10.360buyimg.com/n4/s260x260_jfs/t3238/318/184712437/22495/ca3a44b3/57aae509N7650d030.jpg</item>
+        <item>https://img12.360buyimg.com/n4/s260x260_jfs/t3838/283/508800763/116936/36c781c7/58130399N3f8dfe90.jpg</item>
+        <item>https://img10.360buyimg.com/n4/s260x260_jfs/t1903/66/943905202/95939/75496fa6/56374d4eNc40c1c00.jpg</item>
+        <item>https://img10.360buyimg.com/n4/s260x260_jfs/t3808/326/2672377955/112009/ccab9f11/58648508N972f9aa4.jpg</item>
+        <item>http://img10.360buyimg.com/mobilecms/s500x500_jfs/t3820/321/2166542167/367152/ed7a782b/58510ef6N92e672cb.jpg</item>
+        <item>http://img13.360buyimg.com/mobilecms/s500x500_jfs/t2782/16/3930536928/157844/628a31bc/57a152f6N2a6a1be1.jpg</item>
+        <item>http://img14.360buyimg.com/mobilecms/s500x500_jfs/t3823/114/3480285379/483637/da20f22a/589918e6Nb7274725.jpg</item>
+        <item>http://img12.360buyimg.com/mobilecms/s500x500_jfs/t3172/199/5672165747/287943/96a2d91b/587f11a2Nfd23ca82.jpg</item>
+        <item> http://img13.360buyimg.com/mobilecms/s500x500_jfs/t3346/324/1058293735/176636/1d16a413/581c420aN6080d0c7.jpg</item>
+    </string-array>
+</resources>

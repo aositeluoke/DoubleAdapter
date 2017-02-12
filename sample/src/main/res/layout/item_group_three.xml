@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px32dp"
+        android:background="#eef2f3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2dp"
+        android:background="#e0dedf" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px130dp"
+        android:background="#f8f8f8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="@dimen/px52dp"
+            android:layout_height="@dimen/px52dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px36dp"
+            android:layout_marginRight="@dimen/px36dp"
+            android:src="@drawable/ic_uncheck" />
+
+        <ImageView
+            android:layout_width="@dimen/px46dp"
+            android:layout_height="@dimen/px46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px12dp"
+            android:src="@drawable/ic_shop" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/px6dp"
+            android:singleLine="true"
+            android:text="中盛运动专营店"
+            android:textColor="#00FF00"
+            android:textSize="@dimen/px38dp" />
+    </LinearLayout>
+</LinearLayout>
