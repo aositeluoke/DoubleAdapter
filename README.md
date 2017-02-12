@@ -1,6 +1,7 @@
 # 购物车和订单列表常用适配器（ExpandableListView适配器封装）
 ##使用教程
 ###1、在build.gradle文件中，添加仓库链接
+
 allprojects {
 		repositories {
 			...
@@ -8,10 +9,13 @@ allprojects {
 		}
 	}
 ###2、添加依赖
+
 dependencies {
 	        compile 'com.github.aositeluoke:DoubleAdapter:v1'
 	}
+	
 ###3、实例化多布局支持对象
+<br/>
  //分组多布局支持
     MultiItemTypeSupportG<GroupDto> groupUI = new MultiItemTypeSupportG<GroupDto>() {
         @Override
@@ -53,7 +57,9 @@ dependencies {
             return 0;
         }
     };
+    
 ###4、初始化适配器
+
         adapter = new DoubleAdapter<GroupDto, String>(this, groupUI, childUI, expandableListView) {
             @Override
             protected void convertG(BaseAdapterHelper helper, GroupDto item) {
