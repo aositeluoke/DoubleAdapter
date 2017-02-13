@@ -61,30 +61,29 @@ dependencies {
 ```
 ###4、初始化适配器
 ```
-        adapter = new DoubleAdapter<GroupDto, String>(this, groupUI, childUI, expandableListView) {
-            @Override
-            protected void convertG(BaseAdapterHelper helper, GroupDto item) {
-                helper.setText(R.id.tv_shop_name, item.getGroupName());
-            }
+       adapter = new DoubleAdapter<GroupDto, String>(this, groupUI, childUI, expandableListView) {
+                   @Override
+                   protected void convertG(BaseAdapterHelper helper, GroupDto item) {
+                       helper.setText(R.id.tv_shop_name, item.getGroupName());
+                   }
 
-            @Override
-            protected void convertC(BaseAdapterHelper helper, String item) {
-                ImageView imageView = helper.getView(R.id.iv_product);
-                ImageLoaderUtil.loadProduct(item, imageView);
-            }
+                   @Override
+                   protected void convertC(BaseAdapterHelper helper, String item) {
+                       ImageView imageView = helper.getView(R.id.iv_product);
+                       ImageLoaderUtil.loadProduct(item, imageView);
+                   }
 
-            @Override
-            public int getChildrenCount(int i) {
+                   @Override
+                   public int getChildrenCount(int groupPosition) {
+                       return getGroup(groupPosition).getChilds().size();
+                   }
 
-                return getGroup(i).getChilds().size();
-            }
-
-            @Override
-            public Object getChild(int i, int i1) {
-                return getGroup(i).getChilds().get(i1);
-            }
-        };
-        expandableListView.setAdapter(adapter);
+                   @Override
+                   public String getChild(int groupPosition, int childPosition) {
+                       return getGroup(groupPosition).getChilds().get(childPosition);
+                   }
+               };
+               expandableListView.setAdapter(adapter);
 ```
 ###5、实现效果
  ![](https://github.com/aositeluoke/DoubleAdapter/raw/master/gif/multi_group_and_child.gif)<br>
