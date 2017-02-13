@@ -180,6 +180,12 @@ public abstract class BaseDoubleAdapter<G, C, H extends BaseAdapterHelper> exten
     }
 
 
+    @Override
+    public abstract C getChild(int groupPosition,int childPosition);
+
+    @Override
+    public abstract int getChildrenCount(int groupPosition) ;
+
     //=================公共方法============================
     @Override
     public boolean hasStableIds() {

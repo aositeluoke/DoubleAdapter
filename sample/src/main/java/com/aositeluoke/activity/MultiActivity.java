@@ -111,12 +111,12 @@ public class MultiActivity extends BaseExpandableListViewActivity {
         //实例化适配器
         adapter = new DoubleAdapter<GroupDto, String>(this, groupUI, childUI, expandableListView) {
             @Override
-            public int getChildrenCount(int i) {
-                return getGroup(i).getChilds().size();
+            public int getChildrenCount(int groupPosition) {
+                return getGroup(groupPosition).getChilds().size();
             }
 
             @Override
-            public Object getChild(int groupPosition, int childPosition) {
+            public String getChild(int groupPosition, int childPosition) {
                 return getGroup(groupPosition).getChilds().get(childPosition);
             }
 
@@ -164,7 +164,6 @@ public class MultiActivity extends BaseExpandableListViewActivity {
 
         };
         expandableListView.setAdapter(adapter);
-
         getData();
 
     }

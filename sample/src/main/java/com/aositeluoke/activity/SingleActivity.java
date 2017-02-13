@@ -77,16 +77,17 @@ public class SingleActivity extends BaseExpandableListViewActivity {
             }
 
             @Override
-            public int getChildrenCount(int i) {
-
-                return getGroup(i).getChilds().size();
+            public int getChildrenCount(int groupPosition) {
+                return getGroup(groupPosition).getChilds().size();
             }
 
             @Override
-            public Object getChild(int i, int i1) {
-                return getGroup(i).getChilds().get(i1);
+            public String getChild(int groupPosition, int childPosition) {
+                return getGroup(groupPosition).getChilds().get(childPosition);
             }
         };
+
+
         expandableListView.setAdapter(adapter);
         getData();
     }
